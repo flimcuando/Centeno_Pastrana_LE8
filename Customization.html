@@ -1,0 +1,87 @@
+<html>
+<head>
+	<style type="text/css">
+  		ul {list-style: none;padding: 0px;margin: 0px;}
+  		ul li {display: block;position: relative;float: left;border:1px solid #000}
+  		li ul {display: none;}
+  		ul li a {display: block;background: white;padding: 5px 10px 5px 10px;text-decoration: none;
+          	 white-space: nowrap;color: white;}
+  		ul li a:hover {background: white;}
+  		i:hover ul {display: block; position: absolute;}
+  		li:hover li {float: none;}
+  		li:hover a {background: white;}
+  		li:hover li a:hover {background: white;}
+ 		#drop-nav li ul li {border-top: 0px;}
+	</style>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<title>MPJ Custom Tailor</title>
+</head>
+<body>
+	<div class="header"><p>MPJ CUSTOM TAILOR INCORPORATED</p>
+	<a href="SignUpScreen.html" style="text-align:right">Sign up</a>
+		<div class="navbar">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="ReadyMadeIntro.html">Ready Made</a>
+					<ul>
+						<li><a href="#">Pants</a></li>
+						<li><a href="#">Coats</a></li>
+						<li><a href="#">Suits</a></li>		
+						<li><a href="#">Sets</a></li>
+					</ul>
+				</li>
+				<li><a href="CustomMadeIntro.html">Custom Made</a>
+					<ul>
+						<li><a href="#">Pants</a></li>
+						<li><a href="#">Coats</a></li>
+						<li><a href="#">Suits</a></li>		
+						<li><a href="#">Sets</a></li>
+					</ul>
+				</li>
+				<li><a href="Contacts.html">Contact Us</a></li>
+			</ul>
+	</div>
+	<div class="main">
+		<div class="sidebar">
+		<img class="avatar" src="avatar.jpg"/>
+		<p>In the Custom Made section you can pick the textile, size, colors and even a combination of all but first you must be a member of our site to avoid null purchases.</p>
+		</div>
+		<div class="customization">
+		<h1>CUSTOM MADE SECTION</h1>
+		<p>Now you can choose the textile type, size and color of your desired attire.</p><br><br><br>
+				<select  name="textile">
+				<option value="">Textile</option>
+				<option value="Armani">Armani</option>
+				<option value="Dobi">Dobi</option>
+				<option value="Chinese Cloth">Chinese Cloth</option>
+				</select><br><br><br><br><br><br><br>
+				<select  name="Size">
+				<option value="">Size</option>
+				<option value="XSmall">XSmall</option>
+				<option value="Small">Small</option>
+				<option value="Medium">Medium</option>
+				<option value="Large">Large</option>
+				<option value="XLarge">XLarge</option>
+				<option value="XXLarge">XXLarge</option>
+				</select><br><br><br><br><br><br><br>
+				<select  name="Color">
+				<option value="">Color</option>
+				<option value="Black">Black</option>
+				<option value="White">White</option>
+				<option value="Red">Red</option>
+				<option value="Blue">Blue</option>
+				<option value="Cream">Cream</option>
+				<option value="Beige">Beige</option>
+				</select><br><br><br><br><br><br><br>
+			<div class="radio">
+			<form action="CustomMadeOrderForm.html">
+				<input type="radio" name="sex" value="Pants" checked>Pants<br>
+				<input type="radio" name="sex" value="Coats">Coats<br>
+				<input type="radio" name="sex" value="Suits">Suits<br>
+				<input type="radio" name="sex" value="Sets">Sets<br><br>
+						<input type="submit" value="Suit up!">
+			</form>
+		</div>
+	</div>
+</body>
+</html>

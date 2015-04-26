@@ -1,0 +1,77 @@
+<html>
+<head>
+	<style type="text/css">
+  		ul {list-style: none;padding: 0px;margin: 0px;}
+  		ul li {display: block;position: relative;float: left;border:1px solid #000}
+  		li ul {display: none;}
+  		ul li a {display: block;background: white;padding: 5px 10px 5px 10px;text-decoration: none;
+          	 white-space: nowrap;color: white;}
+  		ul li a:hover {background: white;}
+  		i:hover ul {display: block; position: absolute;}
+  		li:hover li {float: none;}
+  		li:hover a {background: white;}
+  		li:hover li a:hover {background: white;}
+ 		#drop-nav li ul li {border-top: 0px;}
+	</style>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<title>MPJ Custom Tailor</title>
+</head>
+<body>
+	<div class="header"><p>MPJ CUSTOM TAILOR INCORPORATED</p>
+		
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	
+	 Hello user!
+		<div class="navbar">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="ReadyMadeIntro.html">Ready Made</a>
+					<ul>
+						<li><a href="#">Pants</a></li>
+						<li><a href="#">Coats</a></li>
+						<li><a href="#">Suits</a></li>		
+						<li><a href="#">Sets</a></li>
+					</ul>
+				</li>
+				<li><a href="CustomMadeIntro.html">Custom Made</a>
+					<ul>
+						<li><a href="#">Pants</a></li>
+						<li><a href="#">Coats</a></li>
+						<li><a href="#">Suits</a></li>		
+						<li><a href="#">Sets</a></li>
+					</ul>
+				</li>
+				<li><a href="Contacts.html">Contact Us</a></li>
+			</ul>
+	</div>
+	<div class="main">
+		<div class="sidebar">
+		<img class="avatar" src="avatar.jpg"/>
+		<p>In the Custom Made section you can pick the textile, size, colors and even a combination of all but first you must be a member of our site to avoid null purchases.</p>
+		<div class="RMLogin"><p id="RM">CUSTOM MADE SECTION</p>
+		<p>Welcome to the custom made section. First we need to ask for your membership details before we can proceed to the custom process.</p>
+		<script>  
+		function validateform(){  
+		var name=document.myform.email.value;  
+		var password=document.myform.password.value;  
+  
+		if (name==null || name==""){  
+ 		 alert("Name can't be blank");  
+ 		 return false;  
+		}else if(password.length<6){  
+ 		 alert("Password must be at least 6 characters long.");  
+ 		 return false;  
+ 		 }  
+		}  
+		</script>  
+		<form name="myform" action="Customization.html" onsubmit="return validateform()">
+  		<input type="text" name="email" placeholder="Email Address"><br><br>
+  		<input type="password" name="password" placeholder="Password"><br><br>
+  		<input type="submit" value="Suit Up!">
+		</form> 
+		</div>
+		</div>
+		
+	</div>
+</body>
+</html>
